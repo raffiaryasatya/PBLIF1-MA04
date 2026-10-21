@@ -29,3 +29,5 @@ Homestead.json
 .env.production
 .phpactor.json
 auth.json
+War Laundry/dashboard.html
+War Laundry/login.html
