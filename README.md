@@ -6,8 +6,8 @@ PBL Sem 1 : Aplikasi Pengelolaan Laundry Kiloan
 
 Team :
 
-Raffi Aryasatya (Ketua)
+Raffi Aryasatya (Ketua),
 
-Cittra Rutmaria Tambunan (Anggota)
+Cittra Rutmaria Tambunan (Anggota).
 
-Menambahkan kode login.
+Menambahkan halaman login.
