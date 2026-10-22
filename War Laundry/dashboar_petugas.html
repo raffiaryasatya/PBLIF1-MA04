@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Petugas | Laundry Kiloan</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body data-page="dashboard-petugas">
+
+<header class="topbar no-print">
+  <div class="d-flex align-items-center w-100 px-3 px-lg-4">
+    <button class="btn btn-outline-secondary btn-sm d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-label="Buka menu"><i class="bi bi-list"></i></button>
+    <a class="brand" href="dashboard-petugas.html"><span class="brand-mark"><i class="bi bi-droplet-half"></i></span><span class="brand-text"><strong>Laundry</strong> Kiloan<small class="d-none d-md-block">Aplikasi Manajemen Laundry Kiloan Sederhana</small></span></a>
+    <div class="ms-auto d-flex align-items-center gap-3">
+      <div class="text-end lh-sm d-none d-sm-block"><div class="user-name">Nadia</div><div class="user-role">Petugas Laundry</div></div>
+      <a href="index.html" class="btn btn-outline-secondary btn-sm"><i class="bi bi-box-arrow-right me-1"></i>Keluar</a>
+    </div>
+  </div>
+</header>
+<div class="app-shell">
+  <aside class="offcanvas-lg offcanvas-start sidebar no-print" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Tutup"></button>
+    </div>
+    <div class="offcanvas-body d-block">
+      <div class="side-label">PETUGAS LAUNDRY</div>
+      <nav class="side-nav">
+<a class="side-link active" href="dashboard-petugas.html" aria-current="page"><i class="bi bi-speedometer2"></i>Dashboard</a>
+<a class="side-link" href="pesanan-baru.html"><i class="bi bi-plus-circle"></i>Pesanan baru</a>
+<a class="side-link" href="daftar-pesanan.html"><i class="bi bi-list-check"></i>Daftar pesanan</a>
+      </nav>
+      <div class="side-access">
+        <div class="side-label mb-1">Hak akses</div>
+        <p class="mb-0">Catat pesanan, perbarui proses, terima pembayaran, dan cetak nota.</p>
+      </div>
+    </div>
+  </aside>
+  <main class="content">
+
+    <div class="page-head d-flex justify-content-between align-items-start flex-wrap gap-3">
+      <div>
+        <h1 class="page-title">Dashboard Petugas</h1>
+        <p class="page-sub">Senin, 19 Oktober 2026 &middot; Selamat bekerja, Nadia.</p>
+      </div>
+      <a href="pesanan-baru.html" class="btn btn-primary"><i class="bi bi-plus-lg me-1"></i>Pesanan baru</a>
+    </div>
+    <div class="row g-3 mb-4">
+      <div class="col-6 col-xl-3"><div class="card stat-card h-100"><div class="card-body"><div class="stat-label">Pesanan masuk hari ini</div><div class="stat-value">6</div><div class="stat-sub">Total berat 26 kg</div></div></div></div>
+      <div class="col-6 col-xl-3"><div class="card stat-card h-100"><div class="card-body"><div class="stat-label">Pekerjaan aktif</div><div class="stat-value">5</div><div class="stat-sub">Diterima sampai siap diambil</div></div></div></div>
+      <div class="col-6 col-xl-3"><div class="card stat-card h-100"><div class="card-body"><div class="stat-label">Siap diambil</div><div class="stat-value">1</div><div class="stat-sub">Dewi Lestari &middot; LD-022</div></div></div></div>
+      <div class="col-6 col-xl-3"><div class="card stat-card h-100"><div class="card-body"><div class="stat-label">Belum lunas</div><div class="stat-value">2</div><div class="stat-sub">Sisa tagihan Rp56.000</div></div></div></div>
+    </div>
+
+    <div class="card section-card mb-4">
+      <div class="card-body">
+        <h2 class="section-title">Pesanan terbaru</h2>
+        <p class="section-sub">Pesanan masuk hari ini, diurutkan dari waktu penerimaan terbaru.</p>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle app-table">
+            <thead><tr><th>No. pesanan</th><th>Pelanggan</th><th>Layanan</th><th>Kg</th><th>Total</th><th>Status proses</th><th>Pembayaran</th><th>Aksi</th></tr></thead>
+            <tbody>
+<tr><td class="fw-semibold">LD-026</td><td>Siti Aminah</td><td>Cuci reguler</td><td>4</td><td>Rp32.000</td><td><span class="st st-diterima">Diterima</span></td><td><span class="st pay-belum">Belum lunas</span></td><td><a href="detail-pesanan.html" class="link-action">Detail</a></td></tr>
+<tr><td class="fw-semibold">LD-025</td><td>Budi Santoso</td><td>Cuci ekspres</td><td>5</td><td>Rp60.000</td><td><span class="st st-dicuci">Dicuci</span></td><td><span class="st pay-lunas">Lunas</span></td><td><a href="detail-pesanan.html" class="link-action">Detail</a></td></tr>
+<tr><td class="fw-semibold">LD-024</td><td>Rina Putri</td><td>Cuci reguler</td><td>3</td><td>Rp24.000</td><td><span class="st st-dikeringkan">Dikeringkan</span></td><td><span class="st pay-belum">Belum lunas</span></td><td><a href="detail-pesanan.html" class="link-action">Detail</a></td></tr>
+<tr><td class="fw-semibold">LD-023</td><td>Andi Wijaya</td><td>Cuci reguler</td><td>6</td><td>Rp48.000</td><td><span class="st st-disetrika">Disetrika</span></td><td><span class="st pay-lunas">Lunas</span></td><td><a href="detail-pesanan.html" class="link-action">Detail</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mt-3">
+          <span class="text-secondary small">Menampilkan 4 dari 6 pesanan hari ini</span>
+          <a href="daftar-pesanan.html" class="btn btn-outline-primary btn-sm">Lihat semua pesanan</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-lg-6">
+        <div class="card section-card h-100"><div class="card-body">
+          <h2 class="section-title">Perlu ditindaklanjuti</h2>
+          <ul class="list-unstyled kv-list">
+            <li><span>Siap diambil</span><span class="fw-semibold">LD-022 &middot; Dewi</span></li>
+            <li><span>Tagihan Siti &middot; LD-026</span><span class="fw-semibold">Rp32.000</span></li>
+            <li><span>Tagihan Rina &middot; LD-024</span><span class="fw-semibold">Rp24.000</span></li>
+          </ul>
+          <div class="note-box">Buka detail pesanan untuk memperbarui proses atau mencatat pelunasan.</div>
+        </div></div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card section-card h-100"><div class="card-body">
+          <h2 class="section-title">Ringkasan alur pekerjaan</h2>
+          <p class="section-sub">Jumlah pesanan pada setiap status saat ini.</p>
+          <div class="row g-2 flow-grid">
+            <div class="col-6"><div class="kv"><span><span class="st st-diterima">Diterima</span></span><b>1</b></div></div>
+            <div class="col-6"><div class="kv"><span><span class="st st-disetrika">Disetrika</span></span><b>1</b></div></div>
+            <div class="col-6"><div class="kv"><span><span class="st st-dicuci">Dicuci</span></span><b>1</b></div></div>
+            <div class="col-6"><div class="kv"><span><span class="st st-siap">Siap diambil</span></span><b>1</b></div></div>
+            <div class="col-6"><div class="kv"><span><span class="st st-dikeringkan">Dikeringkan</span></span><b>1</b></div></div>
+            <div class="col-6"><div class="kv"><span><span class="st st-selesai">Selesai</span></span><b>1</b></div></div>
+          </div>
+          <p class="text-secondary small mt-3 mb-0">5 pekerjaan aktif &middot; 1 pesanan selesai hari ini</p>
+        </div></div>
+      </div>
+    </div>
+
+    <footer class="page-foot no-print d-flex justify-content-between flex-wrap gap-2">
+      <span>Laundry Kiloan &middot; Prototipe front-end</span>
+      <span>Data contoh: 19 Oktober 2026</span>
+    </footer>
+  </main>
+</div>
+
+<div class="toast-container position-fixed top-0 end-0 p-3 no-print" id="toastWrap"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
